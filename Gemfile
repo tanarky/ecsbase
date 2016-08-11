@@ -5,3 +5,6 @@ gem 'thin'
 gem 'unicorn'
 
 gem 'sinatra-reloader'
+
+gem 'redis'
+gem 'hiredis'
