@@ -42,10 +42,11 @@ configure :development do
 end
 
 get '/' do
-  redis_conn = Redis.new(:host   => settings.redis_host,
-                         :driver => :hiredis)
-  redis_conn.incr('hits')
-  hits = redis_conn.get('hits')
+  #redis_conn = Redis.new(:host   => settings.redis_host,
+  #                       :driver => :hiredis)
+  #redis_conn.incr('hits')
+  #hits = redis_conn.get('hits')
+  hits = '15'
   
   html = Template::HTML.gsub('$time$', Time.now.strftime("%Y/%m/%d %H:%M:%S"))
   html
