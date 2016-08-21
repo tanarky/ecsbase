@@ -4,13 +4,13 @@
 working_directory @dir
 worker_processes 2
 
-timeout 90
+timeout 30
 listen '0.0.0.0:3000'
 
-pid "#{@dir}/tmp/unicorn.pid"
+pid "/tmp/unicorn.pid"
 
-#stderr_path "#{@dir}/log/unicorn.stderr.log"
-#stdout_path "#{@dir}/log/unicorn.stdout.log"
+#stderr_path "/tmp/unicorn.stderr.log"
+#stdout_path "/tmp/unicorn.stdout.log"
 
 #preload_app true
 #

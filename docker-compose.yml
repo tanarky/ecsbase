@@ -11,3 +11,8 @@ services:
     env_file: production.env
   redis:
     image: redis
+  db:
+    image: mysql
+    env_file: mysql.env
+    ports:
+      - "3333:3306"

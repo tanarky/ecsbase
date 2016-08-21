@@ -46,7 +46,7 @@ get '/' do
   #                       :driver => :hiredis)
   #redis_conn.incr('hits')
   #hits = redis_conn.get('hits')
-  hits = '15'
+  hits = 'v2'
   
   html = Template::HTML.gsub('$time$', Time.now.strftime("%Y/%m/%d %H:%M:%S"))
   html
