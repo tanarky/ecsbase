@@ -13,6 +13,8 @@ services:
     image: redis
   db:
     image: mysql
-    env_file: mysql.env
+    env_file: mysql/mysql.env
+    volumes:
+      - ./mysql:/etc/mysql/conf.d
     ports:
       - "3333:3306"
